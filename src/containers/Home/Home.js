@@ -1,11 +1,7 @@
 import React, { Component, PropTypes } from 'react';
-import styled from 'styled-components';
-import Container from '../theme/grid/Container';
-
-
-const Image = styled.img`
-  width: 100%;
-`;
+import {Container} from '../../theme/grid';
+import { Image, HeroImage, RevealP } from './Home.style.js'
+import WhenInView from '../../components/WhenInView/WhenInView';
 
 export default class Home extends Component {
   static propTypes = {};
@@ -13,8 +9,13 @@ export default class Home extends Component {
   render() {
     return (
       <Container>
-        <Image src={require('../assets/code.jpeg')} alt="jumbotron"/>
-        <p>
+        <HeroImage>
+          <h1>Michael Jennings</h1>
+          <h2>Full Stack Developer</h2>
+        </HeroImage>
+        <WhenInView>
+          {({ isInView }) =>
+          <RevealP hide={!isInView}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -22,7 +23,10 @@ export default class Home extends Component {
           voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
           officia deserunt mollit anim id est laborum.
-        </p>
+        </RevealP>
+      }
+        </WhenInView>
+
       </Container>
     )
   }

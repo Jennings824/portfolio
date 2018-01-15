@@ -1,10 +1,10 @@
 import { injectGlobal } from 'styled-components';
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Bellefair');
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-  font-family: 'Bellefair', serif;
-  font-size: 24px;
+  font-family: 'Roboto', serif;
+  font-size: 16px;
 }
 `
