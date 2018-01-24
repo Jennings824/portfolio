@@ -1,5 +1,5 @@
-export const deepblue = '#1f2041';
+export const deepblue = '#2E4768';
 export const purple = '#4B3F72';
 export const yellow = '#ffc857';
-export const teal = '#119DA4';
-export const lightblue = '#19647E';
+export const brightblue = '#3E93FF';
+export const lightblue = '#52B0D2';
