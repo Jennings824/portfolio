@@ -14,4 +14,4 @@ export const Background = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   z-index: -99;
-`
+`;

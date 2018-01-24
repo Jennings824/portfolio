@@ -1,7 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export default styled.div`
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-top: 30px;
+export const Container = styled.div`
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 60px;
+  padding-bottom: 80px;
 `;
