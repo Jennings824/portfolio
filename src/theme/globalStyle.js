@@ -7,4 +7,8 @@ body {
   font-family: 'Roboto', serif;
   font-size: 16px;
 }
+
+h1 {
+  font-weight: normal;
+}
 `

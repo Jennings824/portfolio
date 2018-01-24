@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Zoomy from 'react-zoomy';
-import { ImageButton } from './Projects.style'
+import { BrewReviewImage } from './Projects.style'
 
 class Projects extends Component {
 
@@ -8,12 +8,13 @@ class Projects extends Component {
 
     return (
       <div className="Projects">
+      <h1> Launch Academy Group Project: <a href="">Brew Review</a> </h1>
       <Zoomy
-        imageUrl={require('../../assets/computer.jpeg')}
+        imageUrl={require('../../assets/BrewReview.png')}
         renderThumbnail={({ showImage }) =>
-        <ImageButton onClick={showImage}>
-          <img src={require('../../assets/computer2.jpeg')} alt="computer with glasses"/>
-        </ImageButton>
+        <BrewReviewImage onClick={showImage}>
+          <img src={require('../../assets/BrewReview_small.png')} alt="computer with glasses"/>
+        </BrewReviewImage>
       }
         scale={[1.1, 1.1]}
         imageProps={{
