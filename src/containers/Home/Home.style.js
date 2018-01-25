@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { lightblue } from '../../theme/variables';
 
 export const Image = styled.img`
   width: 100%;
@@ -7,7 +8,7 @@ export const Image = styled.img`
 
 export const HeroImage = styled.div`
   height: 100vh;
-  background-image: url('${require('../../assets/code.jpeg')}');
+  background-image: url('${require('../../assets/computer3.jpg')}');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16,7 +17,7 @@ export const HeroImage = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: lightgrey;
+  color: ${lightblue};
   font-size: 2em;
 
   h1 {
