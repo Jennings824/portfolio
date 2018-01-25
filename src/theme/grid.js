@@ -1,4 +1,5 @@
 import styled, {css} from 'styled-components';
+import media from './media';
 
 export const Div = styled.div`
 ${( {marginBottom} ) => marginBottom && css`
@@ -11,6 +12,26 @@ export const Container = styled(Div)`
   padding-right: 140px;
   padding-top: 60px;
   padding-bottom: 80px;
+  ${media.giant`
+      padding-left: 200px;
+      padding-right: 200px;
+      padding-top: 150px;
+    `}
+  ${media.desktop`
+      padding-left: 120px;
+      padding-right: 120px;
+      padding-top: 50px;
+    `}
+  ${media.tablet`
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 15px;
+    `}
+    ${media.phone`
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 15px;
+      `}
 `;
 
 
