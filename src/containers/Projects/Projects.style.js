@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { lightblue } from '../../theme/variables'
 
 export const BrewReviewImage = styled.div`
   cursor: pointer;
@@ -38,5 +39,13 @@ export const Index = styled.div`
   position: absolute;
   left: 0;
   bottom: 0;
-  
+  z-index: -1;
+  h1 {
+    font-size: 4em;
+    margin: 0;
+    font-weight: bold;
+    transform: translateY(100%);
+    color: ${lightblue};
+    opacity: .4;
+  }
 `;

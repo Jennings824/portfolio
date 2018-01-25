@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Zoomy from 'react-zoomy';
 import { BrewReviewImage, DecideImage, Index } from './Projects.style'
 import { A, B } from '../../theme/types';
-import { Container } from '../../theme/grid/Container';
+import { Container, Relative, Flex } from '../../theme/grid';
 
 class Projects extends Component {
 
@@ -10,10 +10,13 @@ class Projects extends Component {
 
     return (
       <Container>
+      <Relative marginBotom="100px">
       <Index>
         <h1>01</h1>
       </Index>
+      </Relative>
       <h1> Launch Academy Group Project: <A href="https://brewreview2.herokuapp.com/brewpubs">Brew Review</A> </h1>
+      <Flex justify={'center'}>
       <Zoomy
         imageUrl={require('../../assets/BrewReview.png')}
         renderThumbnail={({ showImage }) =>
@@ -29,7 +32,14 @@ class Projects extends Component {
           }
         }}
       />
+      </Flex>
+      <Relative marginBotom="100px">
+      <Index>
+        <h1>02</h1>
+      </Index>
+      </Relative>
       <h1> Launch Academy Breakable Toy: <B href="https://decide24.herokuapp.com/">Decide</B></h1>
+      <Flex justify={'center'}>
       <Zoomy
         imageUrl={require('../../assets/Decide.png')}
         renderThumbnail={({ showImage }) =>
@@ -45,6 +55,7 @@ class Projects extends Component {
           }
         }}
       />
+      </Flex>
       </Container>
     );
   }
