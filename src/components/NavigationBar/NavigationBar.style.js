@@ -15,6 +15,7 @@ export const NavItem = styled(Link)`
   margin-right: 30px;
   font-size: 1.5em;
   cursor: pointer;
+  border-radius: 2px;
   color: ${lightblue};
   position: relative;
   text-decoration: none;
@@ -28,6 +29,7 @@ export const NavItem = styled(Link)`
       width: 100%;
       height: 100%;
       background-color: ${lightblue};
+
       z-index: -1;
       transform: scale(1.3, 1.5);
     }
