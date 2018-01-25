@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Zoomy from 'react-zoomy';
-import { BrewReviewImage, DecideImage, Index } from './Projects.style'
+import { BrewReviewImage, DecideImage, Index, Title } from './Projects.style'
 import { A, B } from '../../theme/types';
-import { Container, Relative, Flex } from '../../theme/grid';
+import { Container, Relative, Flex} from '../../theme/grid';
 
 class Projects extends Component {
 
@@ -10,7 +10,8 @@ class Projects extends Component {
 
     return (
       <Container>
-      <Relative marginBotom="100px">
+      <Title>Projects</Title>
+      <Relative marginTop="100px" marginBotom="50px">
       <Index>
         <h1>01</h1>
       </Index>
@@ -33,7 +34,7 @@ class Projects extends Component {
         }}
       />
       </Flex>
-      <Relative marginBotom="100px">
+      <Relative marginBotom="50px">
       <Index>
         <h1>02</h1>
       </Index>

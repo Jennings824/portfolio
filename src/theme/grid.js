@@ -5,13 +5,18 @@ export const Div = styled.div`
 ${( {marginBottom} ) => marginBottom && css`
   marginBottom: ${marginBottom};
 `}
+${( {marginTop} ) => marginTop && css`
+  marginTop: ${marginTop};
+`}
+${( {marginLeft} ) => marginLeft && css`
+  marginLeft: ${marginLeft};
+`}
+${( {marginRight} ) => marginRight && css`
+  marginRight: ${marginRight};
+`}
 `;
 
 export const Container = styled(Div)`
-  padding-left: 140px;
-  padding-right: 140px;
-  padding-top: 60px;
-  padding-bottom: 80px;
   ${media.giant`
       padding-left: 200px;
       padding-right: 200px;
