@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { lightblue, red } from '../../theme/variables'
+import { lightblue } from '../../theme/variables'
 
 export const BrewReviewImage = styled.div`
   cursor: pointer;
@@ -52,5 +52,4 @@ export const Index = styled.div`
 
 export const Title = styled.h1`
   color: ${lightblue};
-
 `;

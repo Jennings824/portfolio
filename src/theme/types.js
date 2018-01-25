@@ -43,6 +43,6 @@ export const B = styled.a`
 
   &:hover:after {
     height: 100%;
-    background-color: ${lightblue};
+    background-color: ${yellow};
   }
 `;
