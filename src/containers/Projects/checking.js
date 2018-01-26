@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import Zoomy from 'react-zoomy';
 import { BrewReviewImage, DecideImage, Index, Title } from './Projects.style'
 import { A, B } from '../../theme/types';
-import { Container, Relative, Flex } from '../../theme/grid';
+import { Container, Relative, Flex} from '../../theme/grid';
 
 class Projects extends Component {
 
   render() {
-    
+
     return (
       <Container>
       <Title>Projects</Title>
