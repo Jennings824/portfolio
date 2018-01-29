@@ -8,9 +8,8 @@ export const Background = styled.div`
   top: 10vh;
   height: 80vh;
   background-image: url(${require('../../assets/MJ-logo.png')});
-  background-color: ${yellow};
-  opacity: 0.3;
-  background-size: 60%;
+  opacity: 0.4;
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
   z-index: -99;
